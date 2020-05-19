@@ -77,3 +77,11 @@ html {
         margin-left: 20px;
     }
 }
+
+/* su li jquery modal */
+
+.hienra {
+    opacity: 1;
+    visibility: visible;
+    animation: top-up ease-in 0.3s;
+}

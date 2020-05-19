@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-    <title>Document</title>
+    <!-- jqry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shop Tickid</title>
 </head>
 <body>
     <div class="app">
@@ -114,10 +116,10 @@
                                     Liên Hệ
                                 </a>
                             </li>
-                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate login-click">
                                 Đăng Ký
                             </li>
-                            <li class="header__navbar-item header__navbar-item--strong">
+                            <li class="header__navbar-item header__navbar-item--strong register-click">
                                 Đăng Nhập
                             </li>
                         </ul>
@@ -128,8 +130,74 @@
             <div class="header__search">
                 
             </div>
+
+            
         </header>
 
+        <div class="form__login">
+            <div class="form__login-overlay"></div>
+            <div class="form__login-modal">
+                <div class="form__login-modal-inner">
+                    <div class="form__login-header">
+                        <h3>Đăng Nhập</h3>
+                        <span class="btn-register">Đăng Ký</span>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form__login-group">
+                            <form action="" class="form__login-control">
+                                <input type="email" class="email" placeholder="Enter your email!">
+                                <input type="password" class="pwd" placeholder="Enter your password!">
+                            </form>
+                            <button class="btn btn--back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="form__login-social">
+                        <a href="#" class="form__login-social--fb">
+                            <i class="fab fa-facebook-square"></i>
+                            <span>Kết nối với facebook</span>
+                        </a>
+                        <a href="#" class="form__login-social--gg">
+                            <i class="fab fa-google"></i>
+                            <span>Kết nối với google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__register">
+            <div class="form__register-overlay"></div>
+            <div class="form__register-modal">
+                <div class="form__register-modal-inner">
+                    <div class="form__register-header">
+                        <h3>Đăng Ký</h3>
+                        <span class="btn-login">Đăng Nhập</span>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form__register-group">
+                            <form action="" class="form__register-control">
+                                <input type="email" class="email" placeholder="Enter your email!">
+                                <input type="password" class="pwd" placeholder="Enter your password!">
+                                <input type="password" class="pwd" placeholder="Confirm your password!">
+                            </form>
+                            <button class="btn btn--back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="form__register-social">
+                        <a href="#" class="form__register-social--fb">
+                            <i class="fab fa-facebook-square"></i>
+                            <span>Kết nối với facebook</span>
+                        </a>
+                        <a href="#" class="form__register-social--gg">
+                            <i class="fab fa-google"></i>
+                            <span>Kết nối với google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
 
         </div>
@@ -138,5 +206,6 @@
 
         </footer>
     </div>
+    <script src="./assets/js/jquery.auth.js"></script>
 </body>
 </html>
