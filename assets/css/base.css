@@ -2,6 +2,10 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --header-height: 129px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --bg-primary-color:linear-gradient(180deg, #eb2f06, #ff4757);
 }
 
 * {

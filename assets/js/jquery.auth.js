@@ -17,8 +17,9 @@ $(function () {
 
     $('.btn-register').click(function (e) { 
         e.preventDefault();
-        $('.form__login').removeClass('hienra');
-        $('.form__register').addClass('hienra');
+        $('.form__register').removeClass('hienra');
+        $('.form__login').addClass('hienra');
+        console.log('daclick')
 
     });
 
@@ -39,8 +40,8 @@ $(function () {
 
     $('.btn-login').click(function (e) { 
         e.preventDefault();
-        $('.form__register').removeClass('hienra');
-        $('.form__login').addClass('hienra');
+        $('.form__login').removeClass('hienra');
+        $('.form__register').addClass('hienra');
     });
 
 });
