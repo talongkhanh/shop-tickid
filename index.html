@@ -15,6 +15,7 @@
 <body>
     <div class="app">
         <header class="header">
+            <!-- navbar -->
             <div class="header-wrapper">
                 <div class="grid">
                     <nav class="header__navbar">
@@ -126,14 +127,30 @@
                     </nav>
                 </div>
             </div>
-
+            <!-- header width search -->
             <div class="header-width-search">
                 <div class="header__search">
                     <div class="header__search-logo">
                         <a href=""><img src="./assets/img/logo.png" alt="" class="header__search-logo-img"></a>
                     </div>
                     <div class="header__search-main">
-                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm!">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm!">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm!
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Nước Hoa</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Son</a>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
                         <div class="header__search-select">
                             <span>Cửa hàng</span>
                             <i class="fas fa-caret-down"></i>

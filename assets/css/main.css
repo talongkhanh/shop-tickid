@@ -320,7 +320,7 @@ a.form__register-social--gg, a.form__login-social--gg {
 .header-width-search {
     height: var(--header-with-search-height);
     background: var(--white-color);
-    box-shadow: 1px 0px 2px #dedede;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);;
     
 }
 
@@ -337,7 +337,14 @@ a.form__register-social--gg, a.form__login-social--gg {
     display: flex;
     align-items: center;
     border: 1px solid #efefef;
-    box-shadow: 1px 2px #d8d8d8;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);;
+}
+
+.header__search-input-wrap {
+    flex: 1;
+    height: 100%;
+    position: relative;
+
 }
 
 .header__search-input {
@@ -347,7 +354,8 @@ a.form__register-social--gg, a.form__login-social--gg {
     outline: none;
     padding-left: 16px;
     font-size: 1.5rem;
-    flex: 1;
+    width: 100%;
+    font-weight: 400;
 }
 
 .header__search-select {
@@ -371,7 +379,7 @@ a.form__register-social--gg, a.form__login-social--gg {
     position: absolute;
     top: 130%;
     list-style: none;
-    background: #fafafa;
+    background: var(--white-color);
     border-radius: 3px;
     display: none;
 }
@@ -393,7 +401,7 @@ a.form__register-social--gg, a.form__login-social--gg {
 }
 
 .header__search-option-list:hover {
-    background: #d8d8d8;
+    background: #fafafa;
 }
 
 .header__search-option-list i {
@@ -420,13 +428,20 @@ a.form__register-social--gg, a.form__login-social--gg {
 }
 
 .header__search-btn-search:hover {
-    background: #dedede;
+    background: #333e48d9;
 }
 .header__search-logo {
     width: 15%;
     height: 60px;
     text-align: center;
     cursor: pointer;
+    margin-right: 16px;
+}
+
+.header__search-logo a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .header__search-logo-img {
@@ -447,7 +462,53 @@ a.form__register-social--gg, a.form__login-social--gg {
     color: #eb2f06;
     cursor: pointer;
 }
+/* search history */
 
+.header__search-input:focus ~ .header__search-history {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__search-history {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    width: calc(100% - 16px);
+    background: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.header__search-history-heading {
+    margin: 6px 12px;
+    color: #ccc;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.header__search-history-list {
+    list-style: none;
+}
+.header__search-history-item {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 12px;
+}
+.header__search-history-item:hover {
+    background: #fafafa;
+    cursor: pointer;
+}
+
+
+.header__search-history-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
 
 
 
