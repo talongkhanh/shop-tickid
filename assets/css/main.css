@@ -435,7 +435,7 @@ a.form__register-social--gg, a.form__login-social--gg {
     height: 60px;
     text-align: center;
     cursor: pointer;
-    margin-right: 16px;
+    margin-right: 0 8px;
 }
 
 .header__search-logo a {
@@ -461,6 +461,7 @@ a.form__register-social--gg, a.form__login-social--gg {
     font-size: 2.4rem;
     color: #eb2f06;
     cursor: pointer;
+    margin-right: 24px;
 }
 
 .header-cart-wrap {
@@ -485,6 +486,7 @@ a.form__register-social--gg, a.form__login-social--gg {
     display: none;
     visibility: hidden;
     animation: zoom-out ease-out 0.1s;
+    cursor: default;
     
 }
 
@@ -492,15 +494,24 @@ a.form__register-social--gg, a.form__login-social--gg {
     padding: 18px;
 }
 
+.cart-list--no-cart .img-no-cart ,
+.cart-list--no-cart .cart-list-no-cart-msg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cart-list-no-cart-msg {
     display: block;
     margin-top: 12px;
     font-size: 1.4rem;
     color: var(--text-color);
+    display: none;
 }
 
 .img-no-cart {
     width: 56%;
+    display: none;
 }
 
 .cart-list::after {
@@ -511,8 +522,24 @@ a.form__register-social--gg, a.form__login-social--gg {
     border-width: 16px 20px;
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
+    cursor: pointer;
 
 }
+/* cart badge */
+
+.cart-badge {
+    padding: 0 6px;
+    line-height: 15px;
+    border-radius: 15px;
+    border: 2px solid #eb2f06;
+    background: var(--white-color);
+    font-size: 1.4rem;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: -2px;
+}
+
 /* search history */
 
 .header__search-input:focus ~ .header__search-history {
