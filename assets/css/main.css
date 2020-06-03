@@ -139,7 +139,7 @@ li.header__navbar-item {
     cursor: default;
 }
 .header__notify-header h3 {
-    color: #dbdbdb;
+    color: #bfbfbf;
     font-weight: 320;
     padding: 0px 10px;
 }
@@ -501,18 +501,22 @@ a.form__register-social--gg, a.form__login-social--gg {
     margin-left: 12px;
     margin-top: 5px;
 }
+
 .header__cart-item {
-    height: 42px;
-    margin: 5px 0 5px 12px;
+    height: 62px;
+    padding: 10px 0 10px 12px;
     display: flex;
+}
+.header__cart-item:hover {
+    background: #fafafa;
 }
 .header__cart-item-img {
     height: 42px;
+    width: 42px;
     display: inline-block;
 }
 .header__cart-item-infor {
     display: inline-block;
-    cursor: text;
     width: 100%;
 }
 
@@ -530,12 +534,14 @@ a.form__register-social--gg, a.form__login-social--gg {
     line-height: 16px;
     white-space: nowrap;
     margin-left: 12px;
+    cursor: text;
 }
 
 .cart-price-wrap {
     line-height: 16px;
     float: right;
     margin-right: 12px;
+    cursor: text;
 }
 .cart-item-price {
     color: var(--primary-color);
@@ -567,19 +573,35 @@ a.form__register-social--gg, a.form__login-social--gg {
 .cart-item-remove:hover {
     color: var(--primary-color);
 }
-.view-cart {
-    margin: 12px 0;
-    float: right;
-    margin-right: 12px;
-    position: relative;
+.hori {
+    border-top: 1px solid #bfbfbf;
+    height: 1px;
+    margin-bottom: 12px;
 }
-.view-cart::before {
-    content: '';
-    width: 400px;
-    border-top: 1px solid #dadada;
-    position: absolute;
-    right: -12px;
-    top: -12px;
+.view-cart {
+    float: right;
+    margin: 0;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+span.cart-total-price, .wallet-point {
+    margin-right: 12px;
+}
+
+span.cart-total-label, .wallet-label {
+    margin-left: 12px;
+}
+
+.cart-total-wrap, .wallet-wrap {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin-bottom: 12px;
+    height: 16px;
+    line-height: 16px;
 }
 /* no cart */
 .header__cart-list--no-cart {
