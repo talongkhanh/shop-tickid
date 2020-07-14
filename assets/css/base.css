@@ -20,6 +20,13 @@ html {
     line-height: 1.6rem;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
 /* responsive */
 .grid {
     width: 1200px;
@@ -43,7 +50,7 @@ html {
     padding-right: 12px;
     width: 16.6667%;
 }
-.grid__column-8 {
+.grid__column-10 {
     padding-left: 12px;
     padding-right: 12px;
     width: 83.3333%;
@@ -76,7 +83,7 @@ html {
 
 /* media */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .header__navbar-list:last-child {
         visibility: hidden;
         opacity: 0;
@@ -95,7 +102,7 @@ html {
     .header__navbar-item:nth-child(2) {
         margin-left: 20px;
     }
-}
+} */
 
 /* su li jquery modal */
 
