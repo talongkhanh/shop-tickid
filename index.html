@@ -28,8 +28,8 @@
                                         <img src="./assets/img/qr-code.png">
                                     </div>
                                     <div class="header__dowload">
-                                        <a href="#"><img src="./assets/img/ggplay.png"></a>
-                                        <a href="#"><img src="./assets/img/appstore.png"></a>
+                                        <a href="#"><img class="header__dowload-ggplay" src="./assets/img/ggplay.png"></a>
+                                        <a href="#"><img class="header__dowload-appstore" src="./assets/img/appstore.png"></a>
                                     </div>
                                 </div>
                             </li>
@@ -874,76 +874,109 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">
-                            CHĂM SÓC KHÁCH HÀNG
-                        </h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Chính Sách Vận Chuyển</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">
-                            VỀ CHÚNG TÔI
-                        </h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Tạ Long Khánh</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Đại Học CNHN</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">KTPM-3--K13</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">
-                            THEO DÕI CHÚNG TÔI TRÊN
-                        </h3>
-                        <ul class="footer__list">
-                            <li class="footer-list__item">
-                                <a href="" class="footer-list__item-link">
-                                    <i class="fab fa-facebook"></i>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="" class="footer-list__item-link">
-                                    <i class="fab fa-instagram-square"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="" class="footer-list__item-link">
-                                    <i class="fab fa-linkedin"></i>
-                                    Linkedin
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">
-                            VÀO CỬA HÀNG TRÊN ỨNG DỤNG MYOHUI
-                        </h3>
-                        <div class="footer__dowload">
-                            <div class="footer__dowload-qr">
-                                <img src="./assets/img/qr-code.png">
+            <div class="footer-content">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <h3 class="footer__heading">
+                                CHĂM SÓC KHÁCH HÀNG
+                            </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính Sách Vận Chuyển</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="footer__heading">
+                                VỀ CHÚNG TÔI
+                            </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Tạ Long Khánh</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Đại Học CNHN</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">KTPM-3--K13</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4 footer__column-margin">
+                            <h3 class="footer__heading">
+                                THEO DÕI CHÚNG TÔI TRÊN
+                            </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="fab fa-facebook footer__list-item-icon"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="fab fa-instagram-square footer__list-item-icon"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="fab fa-linkedin footer__list-item-icon"></i>
+                                        Linkedin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="footer__heading">
+                                VÀO CỬA HÀNG TRÊN ỨNG DỤNG MYOHUI
+                            </h3>
+                            <div class="footer__dowload">
+                                <div class="footer__dowload-qr">
+                                    <img src="./assets/img/qr-code.png">
+                                </div>
+                                <div class="footer__dowload-apps">
+                                    <a class="footer__dowload-app-ggplay" href="">
+                                        <img src="./assets/img/ggplay.png">
+                                    </a>
+                                    <a class="footer__dowload-app-appstore" href="">
+                                        <img src="./assets/img/appstore.png">
+                                    </a>
+                                    
+                                </div>
                             </div>
-                            <div class="footer__dowload-apps">
-                                <img class="footer__dowload-app-ggplay" src="./assets/img/ggplay.png">
-                                <img class="footer__dowload-app-appstore" src="./assets/img/appstore.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="grid">
+                    <div class="grid__row">
+                        <ul class="footer-info-menu">
+                            <li class="footer-info-item">
+                                <a href="#" class="footer-info-link">CHÍNH SÁCH BẢO MẬT</a>
+                            </li>
+                            <li class="footer-info-item">
+                                <a href="#" class="footer-info-link">QUY CHẾ HOẠT ĐỘNG</a>
+                            </li>
+                            <li class="footer-info-item">
+                                <a href="#" class="footer-info-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                            </li>
+                        </ul>
+                        <div class="footer-info-content">
+                            <h3 class="footer-info-heading">
+                                Công ty mỹ phẩm Ohui- LGvina
+                            </h3>
+                            <p class="footer-info-addr">63 Lê Văn Lương, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                            <div class="footer-info-power">
+                                ♥ Powered by <a href="#">ABAHA.vn</a> - Nền tảng thiết kế Web bán hàng online nhanh và chuyên nghiệp nhất
                             </div>
                         </div>
                     </div>

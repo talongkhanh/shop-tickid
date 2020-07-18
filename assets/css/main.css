@@ -171,11 +171,15 @@ li.header__navbar-item {
 
 .header__dowload {
     width: 180px;
-    height: 33px;
+    height: 30px;
     position: absolute;
     top: 180px;
     display: flex;
     justify-content: space-evenly;
+}
+.header__dowload-ggplay,
+.header__dowload-appstore {
+    height: 18px;
 }
 
 .header__navbar-item:first-child:hover  .header__qr {
@@ -1121,3 +1125,106 @@ i.home-product-item__like-icon-fill {
     margin-bottom: 32px;
 }
 /* footer */
+.footer-content {
+    border-top: 4px solid var(--primary-color);
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background: #fbfbfb;
+}
+.footer__heading {
+    font-size: 1.3rem;
+    color: #666;
+    padding-bottom: 10px;
+}
+.footer__list {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.footer__list-item {
+    margin-top: 4px;
+}
+.footer__list-item-link {
+    color: #737373;
+    display: inline-flex;
+    align-items: center;
+}
+.footer__list-item-link:hover {
+    color: var(--primary-color);
+}
+.footer__list-item-icon {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    top: -1px;
+    margin-right: 6px;
+}
+.footer__dowload {
+    display: flex;
+}
+.footer__dowload-qr {
+    height: 80px;
+}
+.footer__dowload-qr img {
+    height: 100%;
+    border: 1px solid #dedede;
+}
+.footer__dowload-apps {
+    padding-left: 13px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer__dowload-app-ggplay img,
+.footer__dowload-app-appstore img {
+    height: 20px;
+}
+.footer__column-margin {
+    margin-left: auto;
+}
+/* footer-info */
+.footer-info {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+.footer-info-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    font-weight: 300;
+}
+
+.footer-info-link {
+    color: var(--text-color);
+    display: inline-block;
+    line-height: 1.4rem;
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+}
+.footer-info-item:last-child .footer-info-link {
+    border: none;
+}
+.footer-info-content {
+    text-align: center;
+    width: 100%;
+}
+.footer-info-heading {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 40px;
+}
+.footer-info-addr {
+    font-size: 1.8rem;
+    color: #666;
+    margin: 10px 0;
+}
+.footer-info-power {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.footer-info-power a {
+    font-weight: 500;
+    color: #5d6ff2;
+}
