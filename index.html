@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
     <!-- jqry -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <title>Shop Tickid</title>
 </head>
 <body>
@@ -18,10 +21,10 @@
         <header class="header">
             <!-- navbar -->
             <div class="header-wrapper">
-                <div class="grid">
+                <div class="grid wide">
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
-                            <li class="header__navbar-item header__navbar-item--separate">
+                            <li class="header__navbar-item header__navbar-item--separate hide-on-mobile-tablet">
                                 Vào cửa hàng ứng dụng MyOhui
                                 <div class="header__qr">
                                     <div class="header__qr-code">
@@ -43,7 +46,7 @@
                                 ohuiha.com@gmail.com
                             </li>
                         </ul>
-                        <ul class="header__navbar-list">
+                        <ul class="header__navbar-list hide-on-mobile-tablet">
                             <li class="header__navbar-item">
                                     <a class="header__navbar-item-link header__navbar-item--strong" href="#">
                                         <i class="header__navbar-icon header__navbar-icon--big far fa-bell"></i>
@@ -143,141 +146,143 @@
             </div>
             <!-- header width search -->
             <div class="header-width-search">
-                <div class="header__search">
-                    <!-- logo -->
-                    <div class="header__search-logo">
-                        <a href="#"><img src="./assets/img/logo.png" alt="" class="header__search-logo-img"></a>
-                    </div>
-                    <!-- search main -->
-                    <div class="header__search-main">
-                        <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm!">
-                            <!-- search history -->
-                            <div class="header__search-history">
-                                <h3 class="header__search-history-heading">
-                                    Lịch sử tìm kiếm!
-                                </h3>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="#">Nước Hoa</a>
+                <div class="grid wide header__search-wrapper">
+                    <div class="header__search">
+                        <!-- logo -->
+                        <div class="header__search-logo">
+                            <a href="#"><img src="./assets/img/logo.png" alt="" class="header__search-logo-img"></a>
+                        </div>
+                        <!-- search main -->
+                        <div class="header__search-main">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm!">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">
+                                        Lịch sử tìm kiếm!
+                                    </h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="#">Nước Hoa</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#">Son</a>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                                <!-- option search -->
+                            <div class="header__search-select">
+                                <span>Cửa hàng</span>
+                                <i class="fas fa-angle-down"></i>
+    
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-list">
+                                        <span>Trong Shop</span>
+                                        <i class="header__search-option-icon-active fas fa-check"></i>
                                     </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Son</a>
+                                    <li class="header__search-option-list">
+                                        <span>Ngoai Shop</span>
+                                        <i class="fas fa-check"></i>
                                     </li>
                                 </ul>
-                            </div>    
+                            </div>
+                            <div class="header__search-btn-search">
+                                <i class="header__search-btn-search-icon fas fa-search"></i>
+                            </div>
                         </div>
-                            <!-- option search -->
-                        <div class="header__search-select">
-                            <span>Cửa hàng</span>
-                            <i class="fas fa-angle-down"></i>
-
-                            <ul class="header__search-option">
-                                <li class="header__search-option-list">
-                                    <span>Trong Shop</span>
-                                    <i class="header__search-option-icon-active fas fa-check"></i>
-                                </li>
-                                <li class="header__search-option-list">
-                                    <span>Ngoai Shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__search-btn-search">
-                            <i class="header__search-btn-search-icon fas fa-search"></i>
-                        </div>
-                    </div>
-                    <!-- cart -->
-                    <div class="header-cart">
-                        <div class="header-cart-wrap">
-                            <i class="header-cart-icon fas fa-shopping-cart"></i>
-                            <span class="cart-badge">3</span>
-                            <!-- No cart:  header__cart-list--no-cart -->
-                            <div class="header__cart-list">
-                                <img class="img-no-cart" src="./assets/img/no-cart.png" alt="">
-                                <span class="header__cart-list-no-cart-msg">
-                                    Chưa Có Sản Phẩm
-                                </span>
-
-                                <div class="header__cart-product">
-                                    <div class="cart-product-wrap">
-                                        <h4 class="header__cart-heading">Sản Phẩm Đã ThêmThêm</h4>
-                                        <ul class="header__cart-list-item">
-                                            <li class="header__cart-item">
-                                                <img src="https://img.abaha.vn/photos/resized/320x/83-1590063011-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
-                                                <div class="header__cart-item-infor">
-                                                    <div class="cart-item-top">
-                                                        <span class="cart-item-name">
-                                                            Sữa dưỡng Whoo Gongjinhyang Soo Hydrating Emulsion
-                                                        </span>
-                                                        <div class="cart-price-wrap">
-                                                            <span class="cart-item-price">1.350.0000đ</span>
-                                                            <span class="cart-item-mul">x</span>
-                                                            <span class="cart-item-quantity">1</span>
+                        <!-- cart -->
+                        <div class="header-cart">
+                            <div class="header-cart-wrap">
+                                <i class="header-cart-icon fas fa-shopping-cart"></i>
+                                <span class="cart-badge">3</span>
+                                <!-- No cart:  header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img class="img-no-cart" src="./assets/img/no-cart.png" alt="">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa Có Sản Phẩm
+                                    </span>
+    
+                                    <div class="header__cart-product">
+                                        <div class="cart-product-wrap">
+                                            <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                            <ul class="header__cart-list-item">
+                                                <li class="header__cart-item">
+                                                    <img src="https://img.abaha.vn/photos/resized/320x/83-1590063011-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                                    <div class="header__cart-item-infor">
+                                                        <div class="cart-item-top">
+                                                            <span class="cart-item-name">
+                                                                Sữa dưỡng Whoo Gongjinhyang Soo Hydrating Emulsion
+                                                            </span>
+                                                            <div class="cart-price-wrap">
+                                                                <span class="cart-item-price">1.350.0000đ</span>
+                                                                <span class="cart-item-mul">x</span>
+                                                                <span class="cart-item-quantity">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cart-item-bottom">
+                                                            <span class="cart-item-remove">
+                                                                Xóa
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                    <div class="cart-item-bottom">
-                                                        <span class="cart-item-remove">
-                                                            Xóa
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="header__cart-item">
-                                                <img src="https://img.abaha.vn/photos/resized/320x/83-1591179565-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
-                                                <div class="header__cart-item-infor">
-                                                    <div class="cart-item-top">
-                                                        <span class="cart-item-name">
-                                                            Set son lỳ whoo velvet lip rouge
-                                                        </span>
-                                                        <div class="cart-price-wrap">
-                                                            <span class="cart-item-price">945.000đ</span>
-                                                            <span class="cart-item-mul">x</span>
-                                                            <span class="cart-item-quantity">1</span>
+                                                </li>
+                                                <li class="header__cart-item">
+                                                    <img src="https://img.abaha.vn/photos/resized/320x/83-1591179565-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                                    <div class="header__cart-item-infor">
+                                                        <div class="cart-item-top">
+                                                            <span class="cart-item-name">
+                                                                Set son lỳ whoo velvet lip rouge
+                                                            </span>
+                                                            <div class="cart-price-wrap">
+                                                                <span class="cart-item-price">945.000đ</span>
+                                                                <span class="cart-item-mul">x</span>
+                                                                <span class="cart-item-quantity">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cart-item-bottom">
+                                                            <span class="cart-item-remove">
+                                                                Xóa
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                    <div class="cart-item-bottom">
-                                                        <span class="cart-item-remove">
-                                                            Xóa
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="header__cart-item">
-                                                <img src="https://img.abaha.vn/photos/resized/320x/83-1576146597-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
-                                                <div class="header__cart-item-infor">
-                                                    <div class="cart-item-top">
-                                                        <span class="cart-item-name">
-                                                            Set tinh chất  Ohui xanh Prime Advancer Ampoule Serum phiên bản 90ml
-                                                        </span>
-                                                        <div class="cart-price-wrap">
-                                                            <span class="cart-item-price">2.970.000đ</span>
-                                                            <span class="cart-item-mul">x</span>
-                                                            <span class="cart-item-quantity">1</span>
+                                                </li>
+                                                <li class="header__cart-item">
+                                                    <img src="https://img.abaha.vn/photos/resized/320x/83-1576146597-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                                    <div class="header__cart-item-infor">
+                                                        <div class="cart-item-top">
+                                                            <span class="cart-item-name">
+                                                                Set tinh chất  Ohui xanh Prime Advancer Ampoule Serum phiên bản 90ml
+                                                            </span>
+                                                            <div class="cart-price-wrap">
+                                                                <span class="cart-item-price">2.970.000đ</span>
+                                                                <span class="cart-item-mul">x</span>
+                                                                <span class="cart-item-quantity">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cart-item-bottom">
+                                                            <span class="cart-item-remove">
+                                                                Xóa
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                    <div class="cart-item-bottom">
-                                                        <span class="cart-item-remove">
-                                                            Xóa
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="hori"></div>
+                                        <div class="cart-total-wrap">
+                                            <span class="cart-total-label">Tổng tiền :</span>
+                                            <span class="cart-total-price">5.265.000đ</span>
+                                        </div>
+                                        <div class="wallet-wrap">
+                                            <span class="wallet-label">Ví tích điểm</span>
+                                            <span class="wallet-point">+5.265 điểm</span>
+                                        </div>
+                                        <button class="view-cart btn btn--primary">Xem Giỏ Hàng</button>
                                     </div>
-                                    <div class="hori"></div>
-                                    <div class="cart-total-wrap">
-                                        <span class="cart-total-label">Tổng tiền :</span>
-                                        <span class="cart-total-price">5.265.000đ</span>
-                                    </div>
-                                    <div class="wallet-wrap">
-                                        <span class="wallet-label">Ví tích điểm</span>
-                                        <span class="wallet-point">+5.265 điểm</span>
-                                    </div>
-                                    <button class="view-cart btn btn--primary">Xem Giỏ Hàng</button>
+    
+                                    
                                 </div>
-
-                                
                             </div>
                         </div>
                     </div>
@@ -354,7 +359,7 @@
         </div>
         <!-- end form login register -->
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -366,22 +371,22 @@
                                 <li class="category-item category-item--active">
                                     <a href="#" class="category-item__link">
                                         <i class="category-item__link-icon fas fa-caret-right"></i>
-                                        Tất Cả Sản Phẩm
+                                        <span class="category-item-name">Tất Cả Sản Phẩm</span>
                                     </a>
                                 </li>
                                 <li class="category-item">
                                     <a href="#" class="category-item__link"><i class="category-item__link-icon fas fa-caret-right"></i>
-                                        Trang điểm mặt
+                                        <span class="category-item-name">Ohui</span>
                                     </a>
                                 </li>
                                 <li class="category-item">
                                     <a href="#" class="category-item__link"><i class="category-item__link-icon fas fa-caret-right"></i>
-                                        Trang điểm môi
+                                        <span class="category-item-name">Whoo</span>
                                     </a>
                                 </li>
                                 <li class="category-item">
                                     <a href="#" class="category-item__link"><i class="category-item__link-icon fas fa-caret-right"></i>
-                                        Trang điểm mắt
+                                        <span class="category-item-name">Thực phẩm chức năng</span>
                                     </a>
                                 </li>
                             </ul>
@@ -389,7 +394,7 @@
                     </div>
                     <div class="grid__column-10">
                         <!-- home filter -->
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__title">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ biến</button>
                             <button class="home-filter__btn btn btn--secondary">Mới nhất</button>
@@ -875,7 +880,7 @@
 
         <footer class="footer">
             <div class="footer-content">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="grid__row">
                         <div class="grid__column-2-4">
                             <h3 class="footer__heading">
@@ -957,7 +962,7 @@
                 </div>
             </div>
             <div class="footer-info">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="grid__row">
                         <ul class="footer-info-menu">
                             <li class="footer-info-item">

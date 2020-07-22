@@ -20,10 +20,8 @@ nav.header__navbar {
     justify-content: space-between;
 }
 
-
-li.header__navbar-item {
-    display: inline-block;
-    
+.header__navbar-list {
+    display: flex;
 }
 
 .header__navbar-user {
@@ -417,6 +415,10 @@ a.form__register-social--gg, a.form__login-social--gg {
     margin: 0 auto;
 }
 
+.header__search-wrapper {
+    height: 100%;
+} 
+
 .header__search-main {
     display: flex;
     align-items: center;
@@ -460,6 +462,7 @@ a.form__register-social--gg, a.form__login-social--gg {
 }
 
 .header__search-option {
+    z-index: 1;
     position: absolute;
     top: calc(100% + 8px);
     list-style: none;
@@ -520,7 +523,6 @@ a.form__register-social--gg, a.form__login-social--gg {
     height: 60px;
     text-align: center;
     cursor: pointer;
-    margin-right: 0 8px;
 }
 
 .header__search-logo a {
@@ -546,7 +548,7 @@ a.form__register-social--gg, a.form__login-social--gg {
     font-size: 2.4rem;
     color: var(--primary-color);
     cursor: pointer;
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 
 .header-cart-wrap {
@@ -819,10 +821,9 @@ span.cart-total-label, .wallet-label {
 }
 .category-list {
     list-style: none;
-    padding: 0 20px 20px;
+    padding: 0 10px 20px;
 }
 .category-item {
-    padding-top: 5px;
     border-bottom: 1px solid #dedede;
 }
 .category-item:last-child {
@@ -832,14 +833,18 @@ span.cart-total-label, .wallet-label {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.4rem;
-    display: block;
-    padding-bottom: 2px;
+    line-height: 1.6rem;
+    display: flex;
+    padding: 9px 0 7px;
     transition: 0.4s ease-in-out;
-
+    justify-content: space-between;
+}
+.category-item-name {
+    padding-left: 8px;
+    flex: 1;
 }
 .category-item__link:hover{
     color: var(--primary-color);
-    transform: translateX(5px);
 }
 
 .category-item__link-icon {
@@ -853,7 +858,7 @@ span.cart-total-label, .wallet-label {
 
 .category-item--active .category-item__link {
     color: var(--primary-color);
-    transform: translateX(5px);
+    /* transform: translateX(5px); */
 }
 
 /* home sort filter */

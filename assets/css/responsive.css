@@ -1,0 +1,38 @@
+/* mobile &tablet */
+
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 94px;
+        --navbar-height: 24px;
+    }
+    
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header-cart {
+        width: 75px;
+        text-align: center;
+    }
+    .header__search-logo {
+        width: 94px;
+        height: 46px;
+    }
+
+    .header__search-main {
+        height: 36px;
+    }
+}
