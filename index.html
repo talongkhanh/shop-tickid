@@ -121,13 +121,13 @@
                                     Liên Hệ
                                 </a>
                             </li>
-                            <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate login-click">
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate login-click">
                                 Đăng Ký
                             </li>
                             <li class="header__navbar-item header__navbar-item--strong register-click">
                                 Đăng Nhập
-                            </li> -->
-                            <li class="header__navbar-item header__navbar-user">
+                            </li>
+                            <!-- <li class="header__navbar-item header__navbar-user">
                                 <img src="https://i.khoahoc.tv/photos/image/2016/05/23/loai-meo-3.jpg" alt="" class="header__navbar-user-img">
                                 <span class="header__navbar-user-name">
                                     Khánh Tạ
@@ -139,7 +139,7 @@
                                     <li class="navbar-user-item">Đơn mua</li>
                                     <li class="navbar-user-item navbar-user-item-separate">Đăng xuất</li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -148,10 +148,36 @@
             <div class="header-width-search">
                 <div class="grid wide header__search-wrapper">
                     <div class="header__search">
+                        <!-- bars icon -->
+                        <div class="header__mobile hide-on-pc">
+                            <label for="mobile-bar-chexbox" class="header__mobile-bar">
+                                <i  class="header__mobile-bar-icon fas fa-bars"></i>
+                            </label>
+                            <input class="mobile-bar-chexbox" type="checkbox" hidden  id="mobile-bar-chexbox">
+                            <label for="mobile-bar-chexbox" class="mobile-bar-overlay"></label>
+                            <nav class="mobile-bar">
+                                <ul class="mobile-bar-list">
+                                    <li class="mobile-bar-item">
+                                        <div class="mobile-bar-item-btn">
+                                            <span class="mobile__btn--login">Đăng Ký</span>                                       
+                                            <span class="mobile__btn--register">Đăng Nhập</span>
+                                        </div>
+                                    </li>
+                                    <li class="mobile-bar-item">Tin Tức</li>
+                                    <li class="mobile-bar-item">Giỏ Hàng</li>
+                                </ul>
+                            </nav>
+                            <!-- search icon -->
+                            <label for="mobile-search-chexbox" class="hide-on-tablet hide-on-pc header__mobile-search">
+                                <i class="header__mobile-search-icon fas fa-search"></i>
+                            </label>
+                        </div>
                         <!-- logo -->
                         <div class="header__search-logo">
                             <a href="#"><img src="./assets/img/logo.png" alt="" class="header__search-logo-img"></a>
                         </div>
+                        <!-- chex box search -->
+                        <input class="header__search-chexbox" type="checkbox" hidden id="mobile-search-chexbox">
                         <!-- search main -->
                         <div class="header__search-main">
                             <div class="header__search-input-wrap">
@@ -182,7 +208,7 @@
                                         <i class="header__search-option-icon-active fas fa-check"></i>
                                     </li>
                                     <li class="header__search-option-list">
-                                        <span>Ngoai Shop</span>
+                                        <span>Whoo</span>
                                         <i class="fas fa-check"></i>
                                     </li>
                                 </ul>
@@ -269,16 +295,18 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="hori"></div>
-                                        <div class="cart-total-wrap">
-                                            <span class="cart-total-label">Tổng tiền :</span>
-                                            <span class="cart-total-price">5.265.000đ</span>
-                                        </div>
-                                        <div class="wallet-wrap">
-                                            <span class="wallet-label">Ví tích điểm</span>
-                                            <span class="wallet-point">+5.265 điểm</span>
-                                        </div>
-                                        <button class="view-cart btn btn--primary">Xem Giỏ Hàng</button>
+                                        <div class="cart-bottom-wrapper">
+                                            <div class="hori"></div>
+                                            <div class="cart-total-wrap">
+                                                <span class="cart-total-label">Tổng tiền :</span>
+                                                <span class="cart-total-price">5.265.000đ</span>
+                                            </div>
+                                            <div class="wallet-wrap">
+                                                <span class="wallet-label">Ví tích điểm</span>
+                                                <span class="wallet-point">+5.265 điểm</span>
+                                            </div>
+                                            <button class="view-cart btn btn--primary">Xem Giỏ Hàng</button>
+                                            </div>
                                     </div>
     
                                     
@@ -288,8 +316,33 @@
                     </div>
                 </div>
             </div>
-
-            
+            <!-- header sort bar -->
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item header__sort-item-active">
+                        <a href="" class="header__sort-link">
+                            Phổ biến
+                        </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">
+                            Mới nhất
+                        </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">
+                            Bán chạy
+                        </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">
+                            <span>Giá</span>
+                            <span class="header__sort-icon">
+                                <i class="fas fa-angle-up"></i>
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
         </header>
         <!-- form login register -->
         <div class="form__register">
