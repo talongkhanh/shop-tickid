@@ -135,6 +135,10 @@
 .app__content {
         padding-top: 8px;
 }
+.footer__dowload {
+    display: flex;
+    justify-content: center;
+}
     
 }
 

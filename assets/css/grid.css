@@ -138,6 +138,12 @@
 .c-o-11 {
     margin-left: 91.66667%;
 }
+.text-center {
+    text-align: center;
+}
+.m-x-auto {
+    margin: 0 auto;
+}
 
 /* >= Tablet */
 @media (min-width: 740px) {
@@ -390,6 +396,9 @@
     .l-o-11 {
         margin-left: 91.66667%;
     }
+    .l-l-auto {
+        margin-left: auto;
+    }
 }
 
 /* Tablet - PC low resolution */
@@ -532,5 +541,8 @@
       
     .wide .l-o-11 {
         margin-left: 91.66667%;
+    }
+    .wide .l-l-auto {
+        margin-left: auto;
     }
 }

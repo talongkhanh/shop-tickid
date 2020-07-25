@@ -1294,9 +1294,7 @@ i.home-product-item__like-icon-fill {
 .footer__dowload-app-appstore img {
     height: 20px;
 }
-.footer__column-margin {
-    margin-left: auto;
-}
+
 /* footer-info */
 .footer-info {
     background: #f5f5f5;
@@ -1316,7 +1314,6 @@ i.home-product-item__like-icon-fill {
     display: inline-block;
     line-height: 1.4rem;
     padding: 0 20px;
-    border-right: 1px solid #ccc;
 }
 .footer-info-item:last-child .footer-info-link {
     border: none;
