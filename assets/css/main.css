@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+.app {
+    overflow: hidden;
+}
 header.header {
     height: var(--header-height);
     background: var(--white-color);
@@ -839,6 +841,7 @@ span.cart-total-price, .wallet-point {
 }
 .header__sort-item-active .header__sort-link{
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .header__sort-icon i {
@@ -921,7 +924,52 @@ span.cart-total-price, .wallet-point {
     color: var(--primary-color);
     /* transform: translateX(5px); */
 }
+/* mobile nav */
 
+.mobile-category-list {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.mobile-category-list::-webkit-scrollbar {
+    display: none;
+}
+.mobile-category-item {
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.mobile-category-item:nth-of-type(3n +1) {
+    background: #86afd7;
+}
+.mobile-category-item:nth-of-type(3n +2) {
+    background: #76c9bd;
+}
+.mobile-category-item:nth-of-type(3n +3) {
+    background: #88cf81;
+}
+.mobile-category-link {
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0;
+    width: 120px;
+    height: 4rem;
+    padding: 0 0.2rem;
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    display: flex;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    margin-right: 10px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    font-weight: 300;
+    
+}
 /* home sort filter */
 
 .home-filter {
@@ -930,7 +978,6 @@ span.cart-total-price, .wallet-point {
     align-items: center;
     padding: 12px 22px;
     border-radius: 3px;
-    margin-bottom: 10px;
 }
 .home-filter__paginate {
     display: flex;
@@ -1025,13 +1072,15 @@ span.cart-total-price, .wallet-point {
     border-right: 1px solid #eee;
 }
 /* product  */
+
 .home-product {
     margin-bottom: 10px;
 }
+
 .home-product-item {
     display: block;
     background: var(--white-color);
-    /* margin-top: 10px; */
+    margin-top: 10px;
     position: relative;
     border-radius: 3px;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
