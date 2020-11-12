@@ -1234,7 +1234,7 @@ i.home-product-item__like-icon-fill {
     font-weight: 600;
     line-height: 1.2rem;
     position: relative;
-    top: -10px;
+    top: 5px;
 }
 .home-product-pagination {
     margin-top: 48px;
